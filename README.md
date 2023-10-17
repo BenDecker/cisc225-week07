@@ -1,21 +1,19 @@
-# NASM Assembly
+# CISC 225 Week 7 Exercises
 
-A Codepsaces template for building, running, and debugging assembly programs
-using the NASM assembler.
+Programming exercises for week 7.
 
-Intended for a course in *Computer Organization*, this template includes
-tasks for building the assembly source file that is currently open in the editor.
-Two build options are included: one for building a pure assembly program
-requiring no external libraries (*nasm - Assemble/link/debug active file*),
-and another for building an assembly program to be linked with the
-C library (*nasmc - Assemble/link/debug active file w/ C library*).
+## sum1n.asm
 
-Two sample programs are included:
+Calculate the sum of the values 1 through N using the formula
+$ sum = {{ N ( N + 1)} \over 2} $.
 
-- ***hello-world.asm*** - Writes "Hello World!" to the console using the
-*syscall* instruction. This file may be built and run using only assembly
-instructions - no linking with external libraries is necessary. The program
-entry point is *_start*.
-- ***hello-world-c.asm*** - Writes "Hello World!" to the console using the
-*printf* function from the C library. This file must be linked with the
-C library. The program entry point is *main*.
+## multiply.asm
+
+Multiply two unsigned integers using only shifts and additions (do not
+use MUL or IMUL instructions). Leave the product in the RAX register.
+
+## print-int.asm
+
+Print an unsigned doubleword to the console. An output buffer is included
+to accommodate 10 digits followed by a newline. Assume the integer given
+is no more than 10 digits, and output all 10 digits (with leading zeros).
